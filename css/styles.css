@@ -1,0 +1,79 @@
+/* title text #212121; */
+/* цвет основного текста #757575; */
+/* цвет адреса #FFFFFF; */
+/* цвет ссылок у футере rgba(255, 255, 255, 0.6); */
+/* акцент #2196F3; */
+/* background основной: #E5E5E5; */
+/* background команды: #F5F4FA; */
+/* background футер и герой: #2F303A; */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --address-color: #ffffff;
+  --primary-background-color: #e5e5e5;
+  --footer-heroy-background-color: #2f303a;
+  --background-komandy: #f5f4fa;
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+.logo-primary {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo-secondary {
+  font-family: Raleway, sans-serif;
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo-secondary-footer {
+  font-family: Raleway, sans-serif;
+  color: var(--address-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.site-nav {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+.auth-nav {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+}
+a {
+  text-decoration: none;
+}
+.section-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.hidden-header {
+  visibility: hidden;
+}

@@ -11,7 +11,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --address-color: #ffffff;
-  --primary-background-color: #e5e5e5;
+  --primary-background-color: #ffffff;
   --footer-heroy-background-color: #2f303a;
   --background-komandy: #f5f4fa;
   --color-link-footer: rgba(255, 255, 255, 0.6);
@@ -25,6 +25,7 @@ body {
 .list {
   list-style: none;
 }
+
 /* Логотип первая часть */
 .logo-primary {
   font-family: Raleway, sans-serif;
@@ -33,10 +34,6 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-}
-.logo-primary .link:hover,
-.logo-primary .link:focus {
-  color: var(--accent-color);
 }
 
 /* Логотип вторая часть */
@@ -67,9 +64,9 @@ body {
   line-height: 1.14;
   color: var(--primary-text-color);
 }
-a {
-  text-decoration: none;
-  font-style: normal;
+/* Секция  */
+.section {
+  background-color: var(--primary-background-color);
 }
 .section-title {
   font-weight: bold;
@@ -78,9 +75,13 @@ a {
   text-align: center;
   color: var(--title-text-color);
 }
+.workers {
+  background-color: var(--background-komandy);
+}
 .hidden-header {
   visibility: hidden;
 }
+/* Герой */
 .heroy {
   background-color: var(--footer-heroy-background-color);
 }
@@ -93,12 +94,23 @@ a {
   text-transform: uppercase;
   color: var(--address-color);
 }
+/* Cсылки */
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
 .site-nav .link {
   color: var(--title-text-color);
 }
 .auth-nav .link {
   color: var(--primary-text-color);
 }
+.auth-footer .link {
+  color: var(--color-link-footer);
+}
+/* Доступность */
+.logo:hover,
+.logo:focus,
 .site-nav .link:hover,
 .site-nav .link:focus,
 .auth-nav .link:hover,
@@ -106,9 +118,6 @@ a {
   color: var(--accent-color);
 }
 
-.auth-footer .link {
-  color: var(--color-link-footer);
-}
 .footer {
   background-color: var(--footer-heroy-background-color);
 }

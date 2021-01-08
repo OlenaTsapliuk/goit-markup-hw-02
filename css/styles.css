@@ -57,12 +57,14 @@ body {
   font-weight: 500;
   line-height: 1.14;
   color: var(--title-text-color);
+  letter-spacing: 0.02em;
 }
 
 .auth-nav {
   font-weight: 500;
   line-height: 1.14;
   color: var(--primary-text-color);
+  letter-spacing: 0.02em;
 }
 /* Секция  */
 .section {
@@ -75,9 +77,7 @@ body {
   text-align: center;
   color: var(--title-text-color);
 }
-.workers {
-  background-color: var(--background-komandy);
-}
+
 .hidden-header {
   visibility: hidden;
 }
@@ -94,6 +94,28 @@ body {
   text-transform: uppercase;
   color: var(--address-color);
 }
+/* Особенности */
+.features-caption {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+/* Список работников */
+.workers {
+  background-color: var(--background-komandy);
+}
+.workers-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  /* text-align: center; */
+  color: var(--title-text-color);
+}
+.workers-position {
+  font-weight: normal;
+  line-height: 1.7;
+}
 /* Cсылки */
 .link {
   text-decoration: none;
@@ -109,17 +131,30 @@ body {
   color: var(--color-link-footer);
 }
 /* Доступность */
-.logo:hover,
-.logo:focus,
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav .link:focus,
+.auth-footer .link:hover,
+.auth-footer .link:focus {
   color: var(--accent-color);
+}
+.buttons:hover,
+.buttons:focus {
+  color: var(--accent-color);
+  background-color: var(--address-color);
 }
 
 .footer {
   background-color: var(--footer-heroy-background-color);
+}
+.address {
+  color: var(--address-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
 }
 .buttons {
   color: var(--address-color);
@@ -133,4 +168,33 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+}
+/* Cтраница Portfolio */
+.portfolio-caption {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
+.button-caption {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+}
+.button-caption:hover,
+.button-caption:focus,
+.portfolio:hover,
+.portfolio:focus {
+  color: var(--accent-color);
 }

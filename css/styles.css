@@ -14,14 +14,18 @@
   --primary-background-color: #e5e5e5;
   --footer-heroy-background-color: #2f303a;
   --background-komandy: #f5f4fa;
+  --color-link-footer: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
+  font-size: 14px;
+  font-style: normal;
 }
 .list {
   list-style: none;
 }
+/* Логотип первая часть */
 .logo-primary {
   font-family: Raleway, sans-serif;
   color: var(--accent-color);
@@ -30,44 +34,44 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
+.logo-primary .link:hover,
+.logo-primary .link:focus {
+  color: var(--accent-color);
+}
+
+/* Логотип вторая часть */
 .logo-secondary {
   font-family: Raleway, sans-serif;
   color: var(--title-text-color);
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
 }
+/* Логотип вторая часть в футере */
 .logo-secondary-footer {
   font-family: Raleway, sans-serif;
   color: var(--address-color);
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
 }
+/* Навигация */
 .site-nav {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
 }
+
 .auth-nav {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
 }
 a {
   text-decoration: none;
+  font-style: normal;
 }
 .section-title {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -76,4 +80,48 @@ a {
 }
 .hidden-header {
   visibility: hidden;
+}
+.heroy {
+  background-color: var(--footer-heroy-background-color);
+}
+.heroy-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--address-color);
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.auth-nav .link {
+  color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.auth-footer .link {
+  color: var(--color-link-footer);
+}
+.footer {
+  background-color: var(--footer-heroy-background-color);
+}
+.buttons {
+  color: var(--address-color);
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }

@@ -10,8 +10,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --address-color: #ffffff;
-  --primary-background-color: #ffffff;
+  --primary-white-color: #ffffff;
   --footer-heroy-background-color: #2f303a;
   --background-komandy: #f5f4fa;
   --color-link-footer: rgba(255, 255, 255, 0.6);
@@ -25,7 +24,10 @@ body {
 .list {
   list-style: none;
 }
-
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
 /* Логотип первая часть */
 .logo-primary {
   font-family: Raleway, sans-serif;
@@ -47,7 +49,7 @@ body {
 /* Логотип вторая часть в футере */
 .logo-secondary-footer {
   font-family: Raleway, sans-serif;
-  color: var(--address-color);
+  color: var(--primary-white-color);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -59,16 +61,24 @@ body {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
 }
-
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 .auth-nav {
   font-weight: 500;
   line-height: 1.14;
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
 }
+.auth-nav .link {
+  color: var(--primary-text-color);
+}
 /* Секция  */
 .section {
-  background-color: var(--primary-background-color);
+  background-color: var(--primary-white-color);
 }
 .section-title {
   font-weight: bold;
@@ -92,7 +102,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--address-color);
+  color: var(--primary-white-color);
 }
 /* Особенности */
 .features-caption {
@@ -116,20 +126,7 @@ body {
   font-weight: normal;
   line-height: 1.7;
 }
-/* Cсылки */
-.link {
-  text-decoration: none;
-  font-style: normal;
-}
-.site-nav .link {
-  color: var(--title-text-color);
-}
-.auth-nav .link {
-  color: var(--primary-text-color);
-}
-.auth-footer .link {
-  color: var(--color-link-footer);
-}
+
 /* Доступность */
 
 .site-nav .link:hover,
@@ -143,21 +140,24 @@ body {
 .buttons:hover,
 .buttons:focus {
   color: var(--accent-color);
-  background-color: var(--address-color);
+  background-color: var(--primary-white-color);
 }
-
+/* футер */
 .footer {
   background-color: var(--footer-heroy-background-color);
 }
+.auth-footer .link {
+  color: var(--color-link-footer);
+}
 .address {
-  color: var(--address-color);
+  color: var(--primary-white-color);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
 }
 .buttons {
-  color: var(--address-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: Roboto;
   font-style: normal;

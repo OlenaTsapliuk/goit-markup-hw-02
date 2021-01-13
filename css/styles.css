@@ -193,8 +193,6 @@ body {
   font-family: Roboto, sans-serif;
 }
 .button-caption:hover,
-.button-caption:focus,
-.portfolio:hover,
-.portfolio:focus {
+.button-caption:focus {
   color: var(--accent-color);
 }
